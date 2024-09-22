@@ -1,0 +1,236 @@
+/* Global Styles */
+
+header .logo img {
+    max-width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #2d4059;
+    padding: 15px 0;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Main Section */
+main {
+    padding: 40px 0;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: #2d4059;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Appliance Card */
+.appliance-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.appliance-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.appliance-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.appliance-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Tips Section */
+#tips {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#tips ul {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none; 
+}
+
+#tips li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Comparison Tool Styles */
+#compare {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#compare form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#compare select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    transition: border-color 0.3s;
+}
+
+#compare select:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+#compare button {
+    padding: 10px 20px;
+    background-color: #2d4059;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#compare button:hover {
+    background-color: #ff6f61;
+}
+
+/* Comparison Result */
+#comparison-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    display: none; /* Hidden until a comparison is made */
+}
+
+/* Savings Calculator Styles */
+#calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#calculator input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+#calculator input:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+#calculator button {
+    padding: 10px 20px;
+    background-color: #2d4059;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#calculator button:hover {
+    background-color: #ff6f61;
+}
+
+/* Footer */
+footer {
+    background-color: #2d4059;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}

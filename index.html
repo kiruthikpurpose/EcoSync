@@ -1,0 +1,86 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSync Dashboard</title>
+    <link rel="icon" href="EcoSyncLogo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">EcoSync</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#tips">Tips</a></li>
+          <li><a href="#compare">Compare</a></li>
+          <li><a href="#calculator">Savings Calculator</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section id="dashboard">
+      <div class="container">
+        <h2>Smart Resource Conservation Dashboard</h2>
+        <p>Monitor and optimize your home appliances to save energy and water efficiently.</p>
+        <div id="appliance-grid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>Tips for Energy and Water Conservation</h2>
+      <ul>
+        <li>Unplug appliances when not in use.</li>
+        <li>Use energy-efficient appliances.</li>
+        <li>Regularly maintain your appliances for optimal performance.</li>
+        <li>Use cold water for washing whenever possible.</li>
+        <li>Set your refrigerator to the right temperature (around 37°F).</li>
+      </ul>
+    </section>
+
+    <section id="compare">
+      <h2>Compare Appliances</h2>
+      <form id="compare-form">
+        <select id="appliance1">
+          <option value="1">Refrigerator</option>
+          <option value="2">Washing Machine</option>
+          <option value="3">Air Conditioner</option>
+          <option value="4">Desert Air Cooler</option>
+        </select>
+        <select id="appliance2">
+          <option value="1">Refrigerator</option>
+          <option value="2">Washing Machine</option>
+          <option value="3">Air Conditioner</option>
+          <option value="4">Desert Air Cooler</option>
+        </select>
+        <button type="button" onclick="compareAppliances()">Compare</button>
+      </form>
+      <div id="comparison-result"></div>
+    </section>
+
+    <section id="calculator">
+      <h2>Savings Calculator</h2>
+      <form id="savings-form">
+        <label for="usage">Monthly Usage (in hours):</label>
+        <input type="number" id="usage" placeholder="Enter hours" required>
+        <label for="rate">Cost per kWh:</label>
+        <input type="number" id="rate" placeholder="Enter cost" required>
+        <button type="button" onclick="calculateSavings()">Calculate Savings</button>
+      </form>
+      <div id="savings-result"></div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>© 2024 EcoSync. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
