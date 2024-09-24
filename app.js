@@ -1,4 +1,3 @@
-// Sample appliance data for comparison
 const appliances = {
     1: { name: "Refrigerator", energy: 200, water: 0 },
     2: { name: "Washing Machine", energy: 150, water: 30 },
@@ -56,5 +55,4 @@ function calculateSavings() {
     document.getElementById("savings-result").innerText = `Estimated Savings: $${savings}`;
 }
 
-// Populate the appliance grid when the page loads
 window.onload = populateApplianceGrid;
