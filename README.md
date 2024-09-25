@@ -1,4 +1,4 @@
-# EcoSync Dashboard - README
+# EcoSync 
 
 ## Overview
 EcoSync is a smart resource conservation dashboard designed to help users monitor and optimize the energy and water usage of home appliances. By offering features such as appliance comparison and a savings calculator, EcoSync encourages users to conserve energy and reduce water usage, promoting eco-friendly living.
